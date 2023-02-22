@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header
+        {
+            height: 50px;
+            background-color: aqua;
+
+        }
+        body{
+            margin: 0;
+        }
+        .navbar{
+            height: 60px;
+            background-color: black;
+            padding: 50px;
+            padding-bottom: 0px;
+            
+        }
+        a
+        {
+            color:white;
+            text-decoration: none;
+            text-transform: uppercase;
+            /* padding: 20px; */
+            margin-left: 50px;
+            transition: 2s all;
+        }
+        a:hover{
+            color: tomato;
+            font-weight: bold;
+        }
+        .flex-container
+        {
+            /* height: 400px;
+            width: 400px; */
+            background-color: black;
+            /* margin: auto; */
+            margin-top: 20px;
+            text-align: center;
+            padding: 5px;
+            border: 2px solid red;
+            display: flex;
+        }
+        .flex-item
+        {
+            flex: 20px;
+            background-color: red;
+        }
+        h3{
+            color: white;
+            font-family: sans-serif;
+            font-size: 40px;
+            padding: 0%;
+            margin: 0;
+        }
+        .price
+        {
+            margin-top: 0;
+            font-size: 16px;
+            font-style: italic;
+        }
+        button
+        {
+            padding: 20px;
+            background-color: coral;
+            border: none;
+            font-size: 23px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+        @media only screen and (max-width: 768px)
+        {
+            .header{
+                background-color: blue;
+            }
+            .flex-container
+            {
+                width: 100%;
+            }
+            img{
+                width: 50%;
+            }
+            .navbar{
+                background-color: antiquewhite;
+            }
+            a{
+                color: black;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <marquee behavior="" direction="" scrollamount=""> <h4> Diwali Offer 50% Discount in Every Purchase </h4> </marquee>
+    </div>
+
+    <div class="navbar"> 
+        <a href=""> HOME </a> 
+        <a href="">ABOUT</a>
+        <a href="">Service</a>
+        <a href="">Blogs</a>
+        <a href="">Contact</a>
+
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <img src="coffee.jpg" alt="" height="200px">
+            <h3> Coffee <br>
+                <span class="price">  80/- INR </span>
+             </h3>
+             <button type="button" onclick="alert('Thanks for your purchase')"> Buy Now </button>
+            
+        </div>
+        <div class="flex-item">
+            <img src="coffee.jpg" alt="" height="200px">
+            <h3> Coffee <br>
+                <span class="price">  80/- INR </span>
+             </h3>
+             <button type="button" onclick="alert('Thanks for your purchase')"> Buy Now </button>
+            
+        </div>
+        <div class="flex-item">
+            <img src="coffee.jpg" alt="" height="200px">
+            <h3> Coffee <br>
+                <span class="price">  80/- INR </span>
+             </h3>
+             <button type="button" onclick="alert('Thanks for your purchase')"> Buy Now </button>
+            
+        </div>
+      
+    </div>
+
+</body>
+</html>
